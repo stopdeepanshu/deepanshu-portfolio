@@ -102,15 +102,20 @@ nav ul li a:hover::after {
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;   /* ✅ ADD THIS LINE */
     flex-wrap: wrap;
 }
 
 .about-col-1 {
     flex-basis: 25%;
+    display: flex;          /* ✅ ADD */
+
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 140%;
+     height: 100%;           /* ✅ ADD */
+    object-fit: cover;      /* ✅ ADD */
     border-radius: 15px;
 }
 
@@ -150,7 +155,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links.active-link::after {
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li {
